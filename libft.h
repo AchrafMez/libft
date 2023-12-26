@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 16:38:07 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/21 17:32:01 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/26 20:24:43 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ void ft_putendl_fd(char *s, int fd);
 void ft_putnbr_fd(int n, int fd);
 void *ft_memchr(const void *s, int c, size_t n);
 char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_itoa(int n);
 
 #endif
