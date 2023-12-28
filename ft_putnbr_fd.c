@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 15:32:00 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/20 17:49:29 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/27 16:18:13 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ void ft_putnbr_fd(int n, int fd)
     ft_putchar_fd((nb % 10) + '0', fd);
 }
 
-int main()
-{ 
-    int fd = open("file_zbi.txt", O_WRONLY | O_CREAT);
-    if (fd == -1)
-        ft_putstr_fd("Error", 1);
-    else
-        ft_putstr_fd("gww9", fd);
-    return (0);
-}

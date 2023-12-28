@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 15:42:33 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/16 17:17:47 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/28 20:25:06 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     return (dst);
 }
 
-int main()
-{
-    // char d[15] = '\0';
-    // char s[6] = "0xF0";
-    // char d1[15] = '\0';
-    // char s1[6] = "0xF0";
-    printf("%s\n", ft_memmove(NULL, "asdf", 10));
-    printf("%s", memmove(NULL, "asdf", 10));
-}
+// int main()
+// {
+//     // char d[15] = '\0';
+//     // char s[6] = "0xF0";
+//     // char d1[15] = '\0';
+//     // char s1[6] = "0xF0";
+//     printf("%s\n", ft_memmove(NULL, "asdf", 10));
+//     printf("%s", memmove(NULL, "asdf", 10));
+// }

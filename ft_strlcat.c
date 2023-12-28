@@ -6,39 +6,33 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 23:36:37 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/15 18:02:58 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/27 16:51:18 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <string.h>
-// #include "libft.h"
+#include <string.h>
+#include "libft.h"
 
-// size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
-// {
-//     size_t dstlen;
-    
-//     size_t i = 0;
-//     dstlen = ft_strlen(dst);
-    
-//     int j = dstlen - dstsize;
-//     printf("%d", j);
-//     size_t countspace = (dstsize - dstlen);
-//         while (src[i] && i < j - 1)
-//         {
-//                 dst[j + i] = src[i];
-//                 i++;
-//         }
-//         dst[j + i] = '\0';
-//     return (j + i); 
-// }
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t	slen;
+	size_t	dstlen;
+	size_t	total;
+	size_t	i;
 
-// int main()
-// {
-//     char d[100] = "pqrstuvwxyz";
-//     const char s[] = "abcd";
-//     size_t dstsize = 3;
-//     char d1[100] = "pqrstuvwxyz";
-//     const char s1[] = "abcd";
-//     printf("%zu || %s\n", ft_strlcat(d, s, dstsize), d);
-//     printf("%zu || %s", strlcat(d1, s1, 3), d);
-// }
+	i = 0;
+	dstlen = ft_strlen(dst);
+	slen = ft_strlen(src);
+	if (dstlen < dstsize)
+		total = dstlen + slen;
+	else
+		return (slen + dstsize);
+	while (src[i] && dstlen < (dstsize - 1))
+	{
+		dst[dstlen] = src[i];
+		dstlen++;
+		i++;
+	}
+	dst[dstlen] = '\0';
+	return (total); 
+}
