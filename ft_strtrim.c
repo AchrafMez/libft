@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 12:53:07 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/23 20:57:23 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:44:34 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,10 @@ char *ft_strtrim(char const *s1, char const *set)
     i = 0;
     slen = ft_strlen(s1);
     
-    //  if (!s1 && !set)
-    //     return NULL;
+     if (!s1)
+        return NULL;
+    if(!set)
+         return(ft_strdup(s1));
     if (ft_strlen(s1) == 0 && ft_strlen(set) == 0)
         return(ft_strdup(""));
     while (s1[i] && ft_strchr(set, s1[i]))
