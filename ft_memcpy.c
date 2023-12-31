@@ -6,32 +6,32 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 15:10:31 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/29 18:47:12 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/31 16:49:18 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-    size_t i = 0;
-    char *dst;
-    char *srcs;
-    
-    dst = (char *)dest;
-    srcs = (char *)src;
-    if(!dst && !srcs)
-        return (0);
-    if(dest == src)
-        return (dst);
-    while (i < n)
-    {
-        dst[i] = srcs[i];
-        i++;
-    }
- //   dst[i] = '\0';
-    return (dest);
+	size_t	i;
+	char	*dst;
+	char	*srcs;
+
+	i = 0;
+	dst = (char *)dest;
+	srcs = (char *)src;
+	if (!dst && !srcs)
+		return (0);
+	if (dest == src)
+		return (dst);
+	while (i < n)
+	{
+		dst[i] = srcs[i];
+		i++;
+	}
+	return (dest);
 }
 
 // int main()

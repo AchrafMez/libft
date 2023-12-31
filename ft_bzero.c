@@ -10,19 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    size_t i;
-    char *str;
+	size_t	i;
+	char	*str;
 
-    i = 0;
-    str = (char *)s;
-    while (n > i)
-    {
-        str[i] = 0;
-        i++;
-    }
+	i = 0;
+	str = (char *)s;
+	while (n > i)
+	{
+		str[i] = 0;
+		i++;
+	}
 }

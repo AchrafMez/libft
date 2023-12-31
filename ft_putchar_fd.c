@@ -6,12 +6,13 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 20:26:12 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/20 15:22:13 by amezioun         ###   ########.fr       */
+/*   Updated: 2023/12/31 17:52:01 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void ft_putchar_fd(char c, int fd)
+
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

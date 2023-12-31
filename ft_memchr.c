@@ -10,30 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <stdio.h>
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    size_t i = 0;
+	size_t	i;
 
-    if(n == 0)
-        return NULL;
-    while (i < n)
-    {
-        if(*(unsigned char *)(s + i) == (unsigned char)c)
-            return ((unsigned char *)(s + i));
-        i++;
-    }
-    if ((unsigned char)c == '\0' && *(unsigned char *)(s + i) == '\0')
-        return ((unsigned char *)(s + i));  
-    return NULL;
+	i = 0;
+	if (n == 0)
+		return (NULL);
+	while (i < n)
+	{
+		if (*(unsigned char *)(s + i) == (unsigned char)c)
+			return ((unsigned char *)(s + i));
+		i++;
+	}
+	if ((unsigned char)c == '\0' && *(unsigned char *)(s + i) == '\0')
+		return ((unsigned char *)(s + i));
+	return (NULL);
 }
 
 // int main()
 // {
 //     char s[] = "bonjour";
 //     int c = 'n';
-//     printf("%c 
+//     printf("%c
 //     ...", 327);
 // }
