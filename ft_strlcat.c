@@ -6,11 +6,10 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 23:36:37 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/27 16:51:18 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:57:06 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)

@@ -6,12 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 19:15:20 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/21 17:44:50 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:57:58 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

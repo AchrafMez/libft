@@ -6,12 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 20:45:55 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/09 18:42:59 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:58:16 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

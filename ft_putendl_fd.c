@@ -6,12 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 15:28:09 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/27 16:50:44 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:56:18 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fcntl.h>
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

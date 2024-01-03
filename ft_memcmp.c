@@ -6,12 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 16:11:36 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/17 16:27:34 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:55:40 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

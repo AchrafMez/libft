@@ -6,13 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 12:11:01 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/31 19:03:17 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:57:01 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <string.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

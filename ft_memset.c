@@ -6,22 +6,21 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 17:18:31 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/16 17:43:48 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/03 23:02:45 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t	i;
 	char	*str;
-	char	ch;
+	unsigned char	ch;
 
 	i = 0;
 	str = (char *)s;
-	ch = (char)c;
+	ch = (unsigned char)c;
 	while (i < n)
 	{
 		str[i] = c;
@@ -29,11 +28,35 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
+
 // int main()
 // {
-//     char str[] = "born2code";
-//     //printf("before :%s\n", str);
-//    // printf("after :%s", memset(str, 'z', 1));
-//     printf("after :%s", ft_memset(str, 'z', 5));
+// 	int ar[] = {1, 2, 3};
+// 	int *ptr = ar;
+// 	int i = 0;
+// 	// while (i < 4) 
+// 	// {
+// 	// 	ft_memset(ptr, 1, 4);
+// 	// 	i++;
+// 	// }
+	
+// 	// ft_memset(ptr, 233, 2);
+// 	// ft_memset(ptr, 178, 1); //5710
+// 	// printf("%d\n", ar[0]);
+// 	// printf("%d\n", ar[1]);
+// 	// printf("%d\n", ar[2]);
 
+// 	int h = 0;
+// 	int g = -2;
+
+// 		ft_memset(&ar[1], 0b11111111, 4);
+// 		ft_memset(&ar[1], 0b11111110, 1);
+// 		while(h < 3)
+// 		{
+// 			printf("%d \n", ar[h]);
+// 			h++;
+// 		}
+
+// 	return (0);
 // }

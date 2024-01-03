@@ -6,13 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 12:53:07 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/31 19:12:04 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:57:53 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

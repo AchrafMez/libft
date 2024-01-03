@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 16:38:07 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/29 20:49:44 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/03 23:20:41 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
+# include <ctype.h>
 
 int					ft_atoi(char *str);
 char				*ft_strdup(const char *s1);
@@ -55,9 +57,12 @@ char				**ft_split(char const *s, char c);
 typedef struct s_list
 {
 	void			*content;
+	int f;
+	char d;
 	struct s_list	*next;
 }					t_list;
 
 t_list				*ft_lstnew(void *content);
+int ft_lstsize(t_list *lst);
 
 #endif

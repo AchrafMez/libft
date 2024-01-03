@@ -6,12 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 00:31:09 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/27 00:47:36 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/02 04:38:47 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -35,8 +34,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (new);
 }
 
-// int main()
-// {
-//     char s[] = "asdf";
-//     printf("%s", ft_strmapi(s, f));
-// }

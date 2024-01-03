@@ -6,13 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 15:32:00 by amezioun          #+#    #+#             */
-/*   Updated: 2023/12/27 16:18:13 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/01 13:56:23 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
-#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
