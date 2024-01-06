@@ -33,5 +33,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 	}
 	dst[dstlen] = '\0';
-	return (total); 
+	return (total);
 }

@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 01:43:18 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/02 04:13:51 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:21:29 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	count(char const *s, char c)
 	return (wcount);
 }
 
-static int	get_word_len(char const *s, char c, int i)
+static int	word_len(char const *s, char c, int i)
 {
 	int	len;
 
@@ -41,28 +41,38 @@ static int	get_word_len(char const *s, char c, int i)
 	return (len);
 }
 
+static void	ft_free(char **new, int j)
+{
+	while (j >= 0)
+	{
+		free(new[j]);
+		j--;
+	}
+	free(new);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int		len;
-	int		counter;
 	int		j;
 	char	**new;
 
 	i = 0;
-	len = 0;
-	counter = count(s, c);
 	j = 0;
-	new = (char **)malloc(sizeof(char *) * (counter + 1));
+	new = (char **)malloc(sizeof(char *) * (count(s, c) + 1));
 	if (!new)
 		return (NULL);
-	while (s && s[i] != '\0' && j < counter)
+	while (s && s[i] != '\0' && j < count(s, c))
 	{
 		while (s[i] && s[i] == c)
 			i++;
-		len = get_word_len(s, c, i);
-		new[j] = ft_substr(s, i, len);
-		i = i + len;
+		new[j] = ft_substr(s, i, word_len(s, c, i));
+		if (!new[j])
+		{
+			ft_free(new, j);
+			return (NULL);
+		}
+		i += word_len(s, c, i);
 		j++;
 	}
 	new[j] = NULL;

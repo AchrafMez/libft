@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 20:12:17 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/01 13:57:41 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/06 22:45:13 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (haystack[i] != '\0' && i < len)
 	{
 		j = 0;
-		while (haystack[i + j] == needle[j] && (i + j < len) && 
-			(haystack[i + j] != '\0' && needle[j] != '\0'))
+		while (haystack[i + j] == needle[j] && (i + j < len)
+			&& (haystack[i + j] != '\0' && needle[j] != '\0'))
 		{
 			j++;
 			if (j == nlen)

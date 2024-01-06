@@ -6,12 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 17:26:35 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/01 12:59:08 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/05 19:48:41 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {

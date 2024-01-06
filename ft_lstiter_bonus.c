@@ -1,41 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/25 23:45:39 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/04 22:29:33 by amezioun         ###   ########.fr       */
+/*   Created: 2024/01/04 23:31:40 by amezioun          #+#    #+#             */
+/*   Updated: 2024/01/06 16:19:58 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int	i;
-
-	i = 0;
-	if (!s || !f)
+	if (!lst || !f)
 		return ;
-	while (s[i])
+	while (lst != NULL)
 	{
-		f(i, &s[i]);
-		i++;
+		f(lst->content);
+		lst = lst->next;
 	}
+	return ;
 }
 
-// void	f(unsigned int i, char *c)
+// void f(void *c)
 // {
-// 	if (i % 2 == 0)
-// 		*c = *c - 32;
+//     printf("%s\n", c);
 // }
 
 // int main()
 // {
-// 	char s[] = "hello";
-// 	ft_striteri(s, f);
-// 	printf("%s\n", s);
-// 	return (0);
+//     t_list *p;
+//     p = ft_lstnew ("asdf");
+//     p -> next = ft_lstnew ("asdf");
+//     p -> next -> next = ft_lstnew ("asdf");
+//     p -> next -> next -> next = ft_lstnew ("asdf");
+//    ft_lstiter(p, f);
+//     return (0);
 // }

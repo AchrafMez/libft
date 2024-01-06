@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 12:53:07 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/01 13:57:53 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/04 16:15:02 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,44 +14,25 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*new;
+	char	*str;
 	int		i;
-	int		slen;
-	int		nsize;
 	int		j;
+	int		k;
 
-	j = 0;
-	i = 0;
-	slen = ft_strlen(s1);
-	if (!s1)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
-	if (!set)
-		return (ft_strdup(s1));
-	if (ft_strlen(s1) == 0 && ft_strlen(set) == 0)
-		return (ft_strdup(""));
+	i = 0;
+	j = ft_strlen(s1) - 1;
 	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
-	while (slen >= 0 && ft_strchr(set, s1[slen]))
-		slen--;
-	if (i > slen)
-		return (ft_strdup(""));
-	nsize = (slen - i) + 1;
-	new = malloc((nsize + 1) * sizeof(char));
-	if (!new)
+	while (j > i && ft_strchr(set, s1[j]))
+		j--;
+	str = (char *)malloc(sizeof(char) * (j - i + 2));
+	if (str == NULL)
 		return (NULL);
-	while (i <= slen)
-	{
-		new[j] = s1[i];
-		i++;
-		j++;
-	}
-	new[j] = '\0';
-	return (new);
+	k = 0;
+	while (i <= j)
+		str[k++] = s1[i++];
+	str[k] = '\0';
+	return (str);
 }
-
-// int main()
-// {
-//     char s[] = "aeaedaeaeae";
-//     char set[] = "ae";
-//     printf("%s\n", ft_strtrim(s, set));
-// }
