@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 18:33:40 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/05 20:10:52 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/07 20:24:48 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		return ((unsigned char *)(s + i));
 	return (NULL);
 }
-
-// int main()
-// {
-//     char s[] = "bonjour";
-//     int c = 'n';
-//     printf("%c
-//     ...", 327);
-// }

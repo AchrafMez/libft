@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 20:12:17 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/06 22:45:13 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/07 20:10:51 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,19 +38,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// int main()
-// {
-// // // //     char haystack[] = "achraf asdf fd mez ds;fjksafkj";
-// // // //    char needle[] = "mez";
-// // // //    printf("%s\n", ft_strnstr(haystack, needle, 10));
-// // // //     printf("%s", strnstr(haystack, needle, 10));
-//         char *s1 = "MZIRIBMZIRIBMZE123";
-//         char *s2 = "MZIRIBMZE";
-//         size_t max = strlen(s2);
-//         char *i1 = strnstr(s1, s2, max);
-//         char *i2 = ft_strnstr(s1, s2, max);
-//         printf("%zu\n", max);
-//         printf("%s\n",i1);
-//         printf("%s\n",i2);
-// }

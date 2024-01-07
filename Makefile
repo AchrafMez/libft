@@ -10,10 +10,8 @@ RM = rm -rf
 OBJ = $(SRC:.c=.o)
 OBJS = $(BONUS:.c=.o)
 
-# ranlib $(NAME)
-
 all: $(NAME)
-	@echo "\033[1;32m\n  -- M ASHRAF COMPELATION IS DONE -- \n\033[0m"
+	@echo "\033[1;32m\n  -- M ACHRAF COMPELATION IS DONE -- \n\033[0m"
 	@sleep 2
 
 $(NAME): $(OBJ) 
@@ -28,7 +26,7 @@ bonus: $(OBJS) $(BONUS)
 clean :
 	@$(RM) $(OBJ) $(OBJS)
 	@sleep 2
-	@echo "\033[1;32m\n  -- M ASHRAF CLEAN IS DONE, BY! -- \n\033[0m"
+	@echo "\033[1;32m\n  -- M ACHRAF CLEAN IS DONE, BY! -- \n\033[0m"
 
 fclean: clean
 	@$(RM) $(NAME) $(OBJS)

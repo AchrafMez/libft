@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 00:47:06 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/06 22:15:49 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/07 19:08:00 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 		return ;
 	del(lst->content);
 	free(lst);
-	lst = NULL;
 }
