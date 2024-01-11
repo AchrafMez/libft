@@ -6,13 +6,11 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 13:50:02 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/05 20:06:08 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/10 20:16:01 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static int	ncount(long n)
 {

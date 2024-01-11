@@ -11,26 +11,18 @@ OBJ = $(SRC:.c=.o)
 OBJS = $(BONUS:.c=.o)
 
 all: $(NAME)
-	@echo "\033[1;32m\n  -- M ACHRAF COMPELATION IS DONE -- \n\033[0m"
-	@sleep 2
 
 $(NAME): $(OBJ) 
 	@ar rcs $(NAME) $(OBJ)
 
-main:
-	${CC} ${CFLAGS} main.c ${NAME}
 	
 bonus: $(OBJS) $(BONUS)
 	@ar rcs $(NAME) $(OBJS) $(BONUS)
 
 clean :
 	@$(RM) $(OBJ) $(OBJS)
-	@sleep 2
-	@echo "\033[1;32m\n  -- M ACHRAF CLEAN IS DONE, BY! -- \n\033[0m"
 
 fclean: clean
 	@$(RM) $(NAME) $(OBJS)
 
-re:fclean all
-
-.PHONY: all clean fclean re bonus
+re: fclean all

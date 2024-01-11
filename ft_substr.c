@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 19:15:20 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/01 13:57:58 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/11 18:21:57 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*new;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	size = ft_strlen(s);
 	if (*s == 0 || start > (unsigned int)(size - 1))
 		return (ft_strdup(""));

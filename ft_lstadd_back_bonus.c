@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 00:46:32 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/07 20:10:05 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/10 20:15:50 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,12 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*tmp;
 
-	if (lst == NULL || new == NULL)
-		return ;
-	if (*lst == NULL)
+	tmp = *lst;
+	if (!*lst)
 	{
 		*lst = new;
 		return ;
 	}
-	tmp = *lst;
-	while (tmp->next != NULL)
-		tmp = tmp->next;
+	tmp = ft_lstlast(*lst);
 	tmp->next = new;
 }

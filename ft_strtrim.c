@@ -6,7 +6,7 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 12:53:07 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/04 16:15:02 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/11 18:24:14 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		j;
 	int		k;
 
-	if (s1 == NULL || set == NULL)
+	if (!s1 || !set)
 		return (NULL);
 	i = 0;
 	j = ft_strlen(s1) - 1;

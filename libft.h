@@ -6,14 +6,12 @@
 /*   By: amezioun <amezioun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 16:38:07 by amezioun          #+#    #+#             */
-/*   Updated: 2024/01/07 20:26:56 by amezioun         ###   ########.fr       */
+/*   Updated: 2024/01/11 19:22:27 by amezioun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <ctype.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
@@ -57,8 +55,6 @@ char				**ft_split(char const *s, char c);
 typedef struct s_list
 {
 	void			*content;
-	int				f;
-	char			d;
 	struct s_list	*next;
 }					t_list;
 
