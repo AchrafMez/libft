@@ -1,6 +1,5 @@
   # Libft
-
-
+[![Build Status](https://app.travis-ci.com/AchrafMez/libft1337.svg?branch=master)](https://app.travis-ci.com/AchrafMez/libft1337)
 ## About
 At 1337 we are not allowed using functions that already exist, so this is why LIBFT came for. We must recreate some standard C library functions including some additional ones.
 
